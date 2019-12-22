@@ -13,8 +13,8 @@
   "engines": {
     "node": ">=6.0.0"
   },
-  "main": "index.js",
-  "bin": "index.js",
+  "main": "/dist/index.js",
+  "bin": "/dist/index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:reactiflux/discord-irc.git"

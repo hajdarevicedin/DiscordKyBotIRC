@@ -1,0 +1,40 @@
+    {
+        "nickname": "DiscordKyBot",
+        "server": "irc.bttdm.com",
+        "discordToken": "NjU3OTkzMTY2NjE5NjcyNTc2.Xf5ShQ.0A94fATVfBsHwlSyPyn2iY2jc2M",
+        "autoSendCommands": [
+          ["msg", "NickServ", "IDENTIFY p455w0rd"],
+          ["join", "btcnr"]
+        ],
+        "channelMapping": { 
+          "657998101046624271": "#btcnr"
+        },
+        "ircOptions": { 
+          "floodProtection": false,
+          "floodProtectionDelay": 1000,
+          "port": "6667", 
+          "secure": false, 
+          "sasl": false, 
+          "username": "DiscordKyBot", 
+          "password": "p455w0rd" 
+        },
+        "format": { 
+          "commandPrelude": "Command sent by {$nickname}",
+          "ircText": "<{$displayUsername}> {$text}", 
+          "urlAttachment": "<{$displayUsername}> {$attachmentURL}",
+          "discord": "**<{$author}>** {$withMentions}", 
+          "webhookAvatarURL": "https://robohash.org/{$nickname}"
+        },
+        "ircNickColor": false, 
+        "parallelPingFix": true, 
+        "commandCharacters": ["!", "."],
+        "ircStatusNotices": true, 
+        "ignoreUsers": {
+          "irc": ["irc_nick1", "irc_nick2"], 
+          "discord": ["discord_nick1", "discord_nick2"], 
+          "discordIds": ["198528216523210752"] 
+        },
+        "webhooks": {
+          "#discord": "https://discordapp.com/api/webhooks/id/token"
+        }
+      }
